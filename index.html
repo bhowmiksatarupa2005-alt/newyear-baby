@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Forever With You Baby 💖</title>
+
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #ffd1dc, #cdb4db);
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.card {
+  background: rgba(255,255,255,0.95);
+  padding: 35px;
+  border-radius: 30px;
+  text-align: center;
+  width: 90%;
+  max-width: 420px;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+}
+
+h1 {
+  color: #ff4d6d;
+  font-size: 26px;
+}
+
+p {
+  color: #555;
+}
+
+.buttons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#yesBtn {
+  background: #ff4d6d;
+  color: white;
+}
+
+#noBtn {
+  background: #ffe5ec;
+  color: #ff4d6d;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.popup-content {
+  background: white;
+  padding: 30px;
+  border-radius: 25px;
+  text-align: center;
+  max-width: 320px;
+}
+
+.popup-content img {
+  width: 200px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.popup-content h2 {
+  color: #ff4d6d;
+}
+</style>
+</head>
+
+<body>
+
+<!-- MAIN CARD -->
+<div class="card">
+  <h1>HEY BABY!!UMM A LITTLE GIFT FOR YOUU ,FROM YOUR SO CALLED CS GIRLFRIEND HHEHEH💖</h1>
+  <p> WANNA BE MINE FOREVER??✨</p>
+
+  <div class="buttons">
+    <button id="yesBtn" onclick="showStep1()">Yes Baby 💍</button>
+    <button id="noBtn" onmouseover="moveNo()">No 😒</button>
+  </div>
+</div>
+
+<!-- STEP 1: GIF + CHOICE TEXT -->
+<div class="popup" id="step1">
+  <div class="popup-content">
+    <img src="bubu.gif.gif" alt="cute gif">
+    <h2> YOU DIDN’T HAVE ANY OTHER CHOICE 😈</h2>
+    <button onclick="showStep2()">OKAY A LIL GIFT FROM MY SIDE HEHHE IK CHALLO ENJOY!!</button>
+  </div>
+</div>
+
+<!-- STEP 2: FINAL NEW YEAR MESSAGE -->
+<div class="popup" id="step2">
+  <div class="popup-content">
+    <h2>🎆 HAPPY NEW YEAR CUTOO!!🎆</h2>
+    <p>
+      Thank you for choosing me 🥹💖<br><br>
+      Thank you for tolerating me, for being patient with me, and for standing by me even when I made mistakes. I know I haven’t been a perfect girlfriend, and I’m truly sorry for the times I hurt you or disappointed you. Please believe me when I say none of it was intentional.
+I’m trying to learn, to grow, and to become better,not just for you, but for us. I promise I’ll keep trying to be the best version of myself, and the best partner I can be for you.
+I know you sometimes regret the long-distance part of our relationship, and I understand how hard it is. I’m really sorry for that too. But please remember, this phase is temporary.I don’t want to lose you under any circumstances, because you mean the world to me.
+I love you so deeply. I dream of a future with you😭of building a life together, exploring the whole world side by side, and one day even having children with you. 
+Once again, I’m really sorry for everything. I truly hope you can forgive me. I love you, always. 🥰<br><br>
+       HAPPY NEW YEAR BUBU !! CUTU BABY AMR..I LOVE YOU✨💍
+    </p>
+  </div>
+</div>
+
+<script>
+function showStep1() {
+  document.getElementById("step1").style.display = "flex";
+}
+
+function showStep2() {
+  document.getElementById("step1").style.display = "none";
+  document.getElementById("step2").style.display = "flex";
+}
+
+function moveNo() {
+  const btn = document.getElementById("noBtn");
+  btn.style.position = "absolute";
+  btn.style.left = Math.random() * 70 + "%";
+  btn.style.top = Math.random() * 70 + "%";
+}
+</script>
+
+</body>
+</html>
